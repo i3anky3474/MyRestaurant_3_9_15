@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 HttpResponse objHttpResponse = objHttpClient.execute(objHttpPost);
                 HttpEntity objHttpEntity = objHttpResponse.getEntity();
                 objInputStream = objHttpEntity.getContent();
-                
+
             }
             catch (Exception e)
             {
