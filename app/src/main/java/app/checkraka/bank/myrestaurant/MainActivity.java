@@ -9,6 +9,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Exolicit
     private UserTABLE objUserTABLE;
+    private foodTABLE objFoodTABLE;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +26,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void testerAddValue() {
         objUserTABLE.addNewUser("admin","12345","Nipat");
+        objFoodTABLE.addNewFood("MAMA","http://i.ytimg.com/vi/ZmN6Srrd8p4/hqdefault.jpg","150");
     }
 
     private void createAndConnectDatabase() {
         objUserTABLE = new UserTABLE(this);
+        objFoodTABLE = new foodTABLE(this);
     }
 
     @Override
